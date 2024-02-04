@@ -7,9 +7,11 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://artemveremienko.github.io',
+  base: '/astro-alpine-htmx',
   integrations: [tailwind(), alpinejs(), htmx()],
-  output: "server",
+  output: 'server',
   adapter: node({
-    mode: "standalone",
+    mode: 'standalone',
   }),
-});
+})
